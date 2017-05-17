@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  border: 0; 
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+hr {
+  margin-top: 5px;
+	margin-bottom: 5px;
+  border: 1px solid #555;
+  display:block;
+  background-color: #555;
+  height: 1px;
+}
+
+.page_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+
+.page_header a {
+  display: flex;
+}
+
+.page_header img {
+
+}
+
+.github_logo {
+  background: white;
+  margin: 5px;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.content {
+ margin: 8px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 70%;
+}
+
+.menu_bar {
+  display: flex;
+}
+
+.menu_divider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu_item{
+  cursor: pointer;
+}
+
+.text {
+  display: block;
+}
+
+.text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#repos_text li {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+#repos_text a {
+  color: black;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 2px;
+}
+
+.repo_info {
+  font-size: 12px;
+  padding-left: 10px;
+  display: none;
+}
+
+#repos_text a:hover {
+  background: orange;
+}
+
+#repos_text a:hover + .repo_info {
+  display: block;
+}
+
+.menu_text {
+  display:none;
+}
+
+.kylo_and_darth > img {
+  border: 2px solid #555;
+}
+
+.kylo_and_darth > footer {
+ font-family: "Arial", sans-serif;
+ font-size: 9px;
+ border-radius: 2px;
+ background: lightgray;
+ width: 320px;
+}
+

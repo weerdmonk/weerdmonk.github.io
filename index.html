@@ -1,15 +1,121 @@
+<!DOCTYPE html>
 
-<html>
+<html lang=en>
 
   <title>
-   My Github page.
+   Weerdmonk | GitHub
   </title>
 
+ 
   <head>
+	  <meta charset="utf-8">
+    <meta name="author" content="Jyotiprakash Sahoo">
+     
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
   <body>
-    Hello Github!
+		<div class="page_header">
+
+	    <div>
+				weerdmonk
+			</div>
+
+			<div>
+				<a href="https://github.com/weerdmonk" target="_blank"><img class="github_logo" src="./resources/GitHub_Logo.png"></a>
+			</div>
+
+		</div> <!-- page_header -->
+
+    <div class="content">
+
+			<div class="menu">
+
+        <div class="menu_bar">
+
+			    <div class="menu_item" id="home" onclick="show_menu_text(this, 'home_text')">
+						<b>Home</b>
+					</div>
+
+					<div class="menu_divider">|</div>
+
+			    <div class="menu_item" id="repos" onclick="show_menu_text(this, 'repos_text')">
+						<b>Repositories</b>
+					</div>
+
+					<div class="menu_divider">|</div>
+
+			    <div class="menu_item" id="about" onclick="show_menu_text(this, 'about_text')">
+						<b>About</b>
+					</div>
+
+			  </div> <!-- menu_bar -->
+
+			  <hr>
+
+			  <div class="text">
+
+					<div class="menu_text" id="home_text">
+						<p>The force is strong with Kylo even if Kylo is not strong. Darth Vader shall rise once again, at midnight, only to sleep after peeing.</p>
+						<br>
+            <p>Kylo Ren is a fictional character in the Star Wars franchise. Introduced in the 2015 film Star Wars: The Force Awakens, he is portrayed by Adam Driver. Kylo Ren is the chosen name of Ben Solo, the son of original Star Wars trilogy characters Han Solo and Leia Organa. Though trained by his uncle Luke Skywalker as a Jedi, he has been seduced to the dark side of the Force by Supreme Leader Snoke, and aspires to be as powerful as his grandfather, Darth Vader. Kylo Ren is also the master of the Knights of Ren, and a commander for the First Order, an organization spawned from the fallen Galactic Empire. He is featured in The Force Awakens media and merchandising, and will appear in the film's forthcoming sequel, Star Wars: The Last Jedi.</p>
+					<footer>
+						<p style="display:inline-block;font-size:9px;background:lightgray;border-radius:2px;">
+							[Copied from <a href="https://en.wikipedia.org/wiki/Kylo_Ren" target="_blank">https://en.wikipedia.org/wiki/Kylo_Ren]</a>
+						</p>
+					</footer>
+				
+					</div> <!-- home_text -->
+
+          <div class="menu_text" id="about_text">
+						This is weerdmonk's webpage. The Sith shall rise again! May the farce be with you!!
+					</div> <!-- about_text -->
+
+          <div class="menu_text" id="repos_text">
+
+			  	  <ul>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/dslibs" target="_blank">dslibs</a> <div class="repo_info" id="dslibs_info">data structures library</div>
+			  	  	</li>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/chatapp" target="_blank">chatapp</a> <div class="repo_info" id="chatapp_info">winsock chat application</div>
+			  	  	</li>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/alarm_clock" target="_blank">alarm_clock</a> <div class="repo_info" id="alarm_clock_info">arduino pro mini based alarm clock</div>
+			  	  	</li>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/designPatterns" target="_blank">designPatterns</a> <div class="repo_info" id="designpatterns_info">c++ design patterns</div>
+			  	  	</li>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/LearningForEarning" target="_blank">LearningForEarning</a> <div class="repo_info" id="learningforearning_info">set of problems</div>
+			  	  	</li>
+			  	  	<li>
+			  	  		<a href="https://github.com/weerdmonk/avr_kernel" target="_blank">avr_kernel</a> <div class="repo_info" id="avrkernel_info">cooperative kernel for 8-bit AVR</div>
+			  	  	</li>
+			  	  </ul>
+
+          </div> <!-- repos_text -->
+
+			  </div> <!-- text -->
+
+			</div> <!-- menu -->
+
+		  <div class="kylo_and_darth">
+
+		  	<img src="http://i.imgur.com/lfUyFs3.jpg" style="width:320px;height:320px;">
+		  	<footer>
+		  		Image created by: <a href="https://www.instagram.com/briankesinger">https://www.instagram.com/briankesinger</a><br>
+          Imgur post by: <a href="http://imgur.com/user/almosttheresaidthetrextothetoiletpaper">http://imgur.com/user/almosttheresaidthetrextothetoiletpaper</a><br>
+		  		Imgur link: <a href="http://i.imgur.com/lfUyFs3.jpg">http://i.imgur.com/lfUyFs3.jpg</a><br>
+		  	</footer>
+
+      </div> <!-- kylo_and_darth -->
+
+		</div> <!-- content -->
+
   </body>
 
 </html>
