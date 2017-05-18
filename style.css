@@ -52,13 +52,11 @@ hr {
  justify-content: space-between;
 }
 
-.menu {
+.content_body {
   display: flex;
   flex-direction: column;
-}
-
-.menu {
-  width: 70%;
+  flex-grow: 1;
+  margin-right: 8px;
 }
 
 .menu_bar {
