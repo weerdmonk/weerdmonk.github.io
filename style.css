@@ -1,7 +1,7 @@
 
 * {
   margin: 0;
-  border: 0; 
+  border: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   max-height: 999999px;
@@ -90,7 +90,6 @@ hr {
 }
 
 #repos_text li {
-  display: flex;
   align-items: center;
   margin: 8px;
 }
@@ -131,4 +130,3 @@ hr {
  background: lightgray;
  width: 320px;
 }
-
