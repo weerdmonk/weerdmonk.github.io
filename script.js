@@ -59,7 +59,7 @@ function httpGetAsync()
 }
 */
 
-function foo(response) {
+function fetch_and_show_repos(response) {
   var meta = response.meta;
   var data = response.data;
   var number_of_repos = response.data.length;
@@ -72,20 +72,24 @@ function foo(response) {
   for (i = 0; i < number_of_repos; i++)
   {
     console.log(response.data[i]);
-    var li = document.createElement('li');
-    var link = document.createElement('a');
-    var text = document.createTextNode(response.data[i].name);
-    link.appendChild(text);
-    link.setAttribute('href', response.data[i].html_url);
-    link.setAttribute('target', '_blank');
-    li.appendChild(link);
-    repo_list.appendChild(li);
+
+    if (response.data[i].fork == false)
+    {
+      var li = document.createElement('li');
+      var link = document.createElement('a');
+      var text = document.createTextNode(response.data[i].name);
+      link.appendChild(text);
+      link.setAttribute('href', response.data[i].html_url);
+      link.setAttribute('target', '_blank');
+      li.appendChild(link);
+      repo_list.appendChild(li);
+    }
   }
 
   document.getElementById('repos_text').appendChild(repo_list);
 }
 
 var script = document.createElement('script');
-script.src = 'https://api.github.com/users/weerdmonk/repos?callback=foo';
+script.src = 'https://api.github.com/users/weerdmonk/repos?callback=fetch_and_show_repos';
 
 document.getElementsByTagName('head')[0].appendChild(script);
